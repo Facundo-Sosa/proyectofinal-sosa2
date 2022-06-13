@@ -1,0 +1,110 @@
+@import "variables";
+
+@media (max-width:767px) {  /*TAMAÑO SMARTPHONE*/
+    .mainPizzas {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-top: 20px;
+        grid-row-gap: 50px;
+
+        .linea {
+            width: 350px;
+        }
+        
+        .elemento {
+            display:grid;
+            grid-template-columns: 350px;
+            grid-template-rows: 350px 80px 30px;
+            grid-row-gap: 10px;
+            justify-self: center;
+            background-color: $colorElemento;
+            border: $estiloBordes;
+    
+            .fotoPizza {
+                height: 350px;
+                width: 350px;
+        
+                img {
+                    height: 350px;
+                    width: 350px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) { /*TAMAÑO TABLET*/
+    .mainPizzas {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-row-gap: 10px;
+
+        .linea {
+            width: 350px;
+        }
+        
+        .elemento {
+            display:grid;
+            grid-template-columns: 180px 350px 90px;
+            grid-gap: 10px;
+            grid-template-rows: 180px;
+            justify-self: center;
+            background-color: $colorElemento;
+            border: $estiloBordes;
+    
+            .fotoPizza {
+                height: 180px;
+                width: 180px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+    
+                img {
+                    height: 180px;
+                    width: 180px;
+                    align-self: center;
+                }
+            }
+        }    
+    }
+}
+
+@media (min-width:1024px){ /*TAMAÑO DESKTOP*/
+    .mainPizzas {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-row-gap: 10px;
+
+        .linea {
+            width: 350px;
+        }
+
+        .elemento {
+            display:grid;
+            grid-template-columns: 210px 400px 100px;
+            grid-gap: 10px;
+            grid-template-rows: 200px;
+            justify-self: center;
+            background-color: rgb(217, 4, 41);
+            border: 10px solid $colorElemento;
+    
+            .fotoPizza {
+                height: 200px;
+                width: 200px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+    
+                img {
+                    height: 200px;
+                    width: 200px;
+                    align-self: center;
+                }
+            }
+        }    
+    }
+}

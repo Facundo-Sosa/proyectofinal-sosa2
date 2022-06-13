@@ -1,0 +1,109 @@
+@import "variables";
+
+@media (max-width:767px) {  /*TAMAÑO SMARTPHONE*/
+    .mainPromociones {
+        display: grid;
+        grid-row-gap: 20px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 20px;
+    }
+
+    .promo {
+        display: grid;
+        background-color: $colorElemento;
+        border: $estiloBordes;
+
+        .linea{
+            width: 300px;
+        }
+    }
+
+    .promo h2 {
+        font-family: 'Anton', sans-serif;
+    }
+    
+    .promo h2,.promo p {
+        font-size: 16px;
+    }
+
+    .mainPromociones .precio {
+        position: absolute;
+        background-color: azure;
+        border-radius: 50%;
+        font-size: 10px;
+        height: 40px;
+        width: 50px;
+        padding-top: 15px;
+        justify-self: flex-end;
+    }
+}
+
+@media (min-width:768px) {  /*TAMAÑO TABLET*/
+    .mainPromociones {
+        display: grid;
+        grid-row-gap: 20px;
+        margin-left: 12px;
+        margin-right: 12px;
+        grid-row-gap: 10px;
+    }
+
+    .promo {
+        display: grid;
+        border: $estiloBordes;
+    }
+
+    .promo h2 {
+        font-family: 'Anton', sans-serif;
+    }
+    
+    .promo h2,.promo p {
+        font-size: 16px;
+    }
+
+    .mainPromociones .precio {
+        position: absolute;
+        background-color: azure;
+        border-radius: 50%;
+        font-size: 10px;
+        height: 40px;
+        width: 50px;
+        padding-top: 15px;
+        justify-self: flex-end;
+    }
+}
+
+@media (min-width:1024px) { /*TAMAÑO DESKTOP*/
+    .mainPromociones {
+        display: grid;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 20px;
+        grid-row-gap: 40px;
+        margin-bottom: 40px;
+
+        .promo {
+            background-color: $colorElemento;
+            border: 6px $colorElemento;
+            .precio {
+                position: absolute;
+                background-color: azure;
+                border-radius: 50%;
+                height: 80px;
+                width: 90px;
+                margin-left: 50%;
+                padding-top: 15px;
+            }    
+    
+            h2 {
+                font-family: 'Anton', sans-serif;
+                font-size: 30px;
+            }    
+    
+            p {
+                font-size: 30px;
+                display: inline-block;
+            }
+        }
+    }  
+}

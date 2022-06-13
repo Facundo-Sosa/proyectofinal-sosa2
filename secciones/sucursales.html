@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icono.jpg">
+    <title>Pizzerias Mandiyu</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/mandiyu logo-cutout.png" height="100px" width="400px" alt="">
+        </div>
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkButtom">
+                <i class="buttonMenu"><img src="../img/menu-cutout.png" alt=""></i>
+            </label>   
+            <ul class="menuItems">
+                <li>
+                    <a href="../index.html">HISTORIA</a>
+                </li>
+                <li>
+                    <a href="./sucursales.html">SUCURSALES</a>
+                </li>
+                <li>
+                    <a href="./pizzas.html">PIZZAS</a>
+                </li>
+                <li>
+                    <a href="./empanadas.html">EMPANADAS</a>
+                </li>
+                <li>
+                    <a href="./promociones.html">PROMOCIONES</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainSucursales">
+        <div class="sucursales">
+            <div class="sucursal">
+                <h2>Sucursal Boedo</h2>
+                <div class="linea"></div>
+                <div class="mapaImagen">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7064976744214!2d-58.42030508497003!3d-34.61158256542084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5f6880a023%3A0x1537131fc709e80a!2sAv.%20Boedo%2048%2C%20C1206AAN%20CABA!5e0!3m2!1ses!2sar!4v1652208023896!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img height="400px" width="400px" src="../img/mandiyu boedo.jpg" alt="">
+                </div>
+                <h3>Contacto</h3>
+                <h4>Direccion: Av. Boedo 48</h4>
+                <h4>Tel: 4958-1056</h4>
+            </div>
+            <div class="sucursal">
+                <h2>Sucursal Sarmiento</h2>
+                <div class="linea"></div>
+                <div class="mapaImagen">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9477207518294!2d-58.41924778497018!3d-34.60548346509811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8a83e1bb9d%3A0xcf9712ba4686e5f1!2sMario%20Bravo%20%26%20Sarmiento%2C%20C1191%20CABA!5e0!3m2!1ses!2sar!4v1652208659189!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img height="400px" width="400px" src="../img/mandiyu sarmiento.jpg" alt="">
+                </div>
+                <h3>Contacto</h3>
+                <h4>Direccion: Mario Bravo 402</h4>
+                <h4>Tel: 4862-0229</h4>
+            </div>    
+            <div class="sucursal">
+                <h2>Sucursal San Juan</h2>
+                <div class="linea"></div>
+                <div class="mapaImagen">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.0669849933944!2d-58.38748649374734!3d-34.62205662024492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb26ebce4279%3A0xcbb84effe4dc6ec9!2zTWFuZGl5w7o!5e0!3m2!1ses!2sar!4v1652208290935!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img height="400px" width="400px" src="../img/mandiyu san juan.jpg" alt="">
+                </div>
+                <h3>Contacto</h3>
+                <h4>Direccion: Av. San Juan 1499</h4>
+                <h4>Tel: 4304-5988</h4>
+            </div>
+        </div>
+        <form class="quejasSugerencias">
+            <h3 style="font-size: 40px;">Quejas o sugerencias</h3>
+            <label for="nombre"></label>
+            <input type="text" placeholder="Nombre" name="nombre">
+            <label for="email"></label>
+            <input type="email" placeholder="Email" name="email">
+            <label for="sucursal"></label>
+            <h3>Sucursal</h3>
+            <div>
+                <input type="radio" name="sucursal" id="">Boedo <br>
+                <input type="radio" name="sucursal" id="">Sarmiento <br>
+                <input type="radio" name="sucursal" id="">San Juan <br>
+            </div>
+            <textarea placeholder="Queja o sugerencia" style="resize: none;" name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </main>
+    
+    <footer>
+        <h2>Redes</h2>
+        <div class="redes">
+            <div>
+              <a href="#" target="_blank"><img src="../img/fb icon.png" height="30px" alt=""></a>
+            </div>
+            <div>
+              <a href="#" target="_blank"> <img src="../img/inta logo.png" height="30px" alt=""></a>
+            </div>
+            <div>
+              <a href="#" target="_blank"> <img src="../img/twitter logo.png" height="30px" alt=""></a>
+            </div>
+        </div>
+        <h3>© 2022.Todos los derechos reservados.</h3>
+    </footer>
+</body>
+</html>
