@@ -1,45 +1,52 @@
+@import "variables";
+
 @media (max-width:767px) {  /*TAMAÑO SMARTPHONE*/
     .mainSucursales {
         display: grid;
         justify-content: center;
         grid-row-gap: 50px;
-    }
-    
-    .sucursales {
-        display: grid;
-        justify-content: center;
-        text-align: center;
-        grid-row-gap: 80px;
-    }
-    
-    .sucursal {
-        display: grid;
-        grid-row-gap: 5px;
-        justify-content: center;
-    }
-    
-    .sucursal .linea {
-        justify-self: center;
-    }
-    
-    .mapaImagen {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 20px;
-    }
 
-    .mapaImagen iframe, .mapaImagen img {
-        height: 300px;
-        width: 300px;
-        justify-self: center;
-    }
+        .sucursales {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            grid-row-gap: 80px;
+    
+            .sucursal {
+                display: grid;
+                grid-row-gap: 5px;
+                justify-content: center;
+                background-color: $colorElemento;
+                border: $estiloBordes;
 
-    .quejasSugerencias {
-        display: grid;
-        justify-content: center;
-        grid-row-gap: 5px;
-        padding-bottom: 30px;
-    }
+                .linea {
+                    justify-self: center;
+                    width: 350px;
+                }
+    
+                .mapaImagen {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 20px;
+            
+                    iframe, img {
+                        height: 300px;
+                        width: 300px;
+                        justify-self: center;
+                    }
+                }
+            }
+        }
+
+        .quejasSugerencias {
+            display: grid;
+            justify-content: center;
+            grid-row-gap: 5px;
+            padding-bottom: 30px;
+            background-color: $colorElemento;
+            border: $estiloBordes;
+        }
+    }    
 }
 
 @media (min-width:768px) {  /*TAMAÑO TABLET*/
@@ -47,89 +54,102 @@
         display: grid;
         justify-content: center;
         grid-row-gap: 50px;
-    }
-    
-    .sucursales {
-        display: grid;
-        justify-content: center;
-        text-align: center;
-        grid-row-gap: 80px;
-    }
-    
-    .sucursal {
-        display: grid;
-        grid-row-gap: 5px;
-        justify-content: center;
-    }
-    
-    .sucursal .linea {
-        justify-self: center;
-    }
-    
-    .mapaImagen {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-    }
 
-    .mapaImagen iframe, .mapaImagen img {
-        height: 300px;
-        width: 300px;
-    }
+        .sucursales {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            grid-row-gap: 80px;
+    
+            .sucursal {
+                display: grid;
+                grid-row-gap: 5px;
+                justify-content: center;
+                background-color: $colorElemento;
+                border: $estiloBordes;
+        
+                .linea {
+                    justify-self: center;
+                }
+        
+                .mapaImagen {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 10px;
+            
+                    iframe, img {
+                        height: 300px;
+                        width: 300px;
+                    }
+                }
+            }
+        }
 
-    .quejasSugerencias {
-        display: grid;
-        justify-content: center;
-        grid-row-gap: 5px;
-        padding-bottom: 30px;
+        .quejasSugerencias {
+            display: grid;
+            justify-content: center;
+            grid-row-gap: 5px;
+            padding-bottom: 30px;
+            background-color: $colorElemento;
+            border: $estiloBordes;
+        } 
     }
 }
+    
 
 @media (min-width:1024px) { /*TAMAÑO DESKTOP*/
     .mainSucursales {
-        padding-left: 30px;
         display: grid;
-        justify-content: start;
+        justify-content: center;
         grid-row-gap: 70px;
-    }
 
-    .mainSucursales h2 {
-        font-size: 40px;
-    }
-
-    .sucursales {
-        display: grid;
-        justify-content: start;
-        grid-row-gap: 80px;
-    }
-
-    .sucursal {
-        display: grid;
-        justify-content: start;
-        grid-row-gap: 5px;
-        justify-items: start;
-    }
-
-    .sucursal .linea {
-        justify-self: start;
-    }
-
-    .mapaImagen {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+        h2 {
+            font-size: 40px;
+        }
+        
+        .sucursales {
+            display: grid;
+            justify-content: start;
+            grid-row-gap: 80px;
     
-    .mapaImagen iframe, .mapaImagen img {
-        height: 400px;
-        width: 400px;
+            .sucursal {
+                display: grid;
+                grid-row-gap: 5px;
+                justify-items: center;
+                background-color: $colorElemento;
+                border: $estiloBordes;
+        
+                .linea {
+                    justify-self: center;
+                }
+        
+                .mapaImagen {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+        
+                    iframe, img {
+                        height: 400px;
+                        width: 400px;
+                    }
+                }
+            }
+        } 
+
+        .quejasSugerencias {
+            display: grid;
+            justify-content: center;
+            grid-row-gap: 5px;
+            padding-bottom: 30px;
+            background-color: $colorElemento;
+            border: $estiloBordes;
+        }
     }
 
-    .quejasSugerencias {
-        display: grid;
-        justify-content: start;
-        grid-row-gap: 5px;
-        padding-bottom: 30px;
-    }
+    
+
+   
+
+    
     
 }

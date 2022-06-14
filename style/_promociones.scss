@@ -11,6 +11,7 @@
 
     .promo {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         background-color: $colorElemento;
         border: $estiloBordes;
 
@@ -42,15 +43,17 @@
 @media (min-width:768px) {  /*TAMAÑO TABLET*/
     .mainPromociones {
         display: grid;
-        grid-row-gap: 20px;
-        margin-left: 12px;
-        margin-right: 12px;
+        justify-content: center;
+        grid-row-gap: 20px;;
         grid-row-gap: 10px;
     }
 
     .promo {
         display: grid;
+        justify-content: center;
+        grid-template-columns: 450px 50px;
         border: $estiloBordes;
+        background-color: $colorElemento;
     }
 
     .promo h2 {
@@ -62,7 +65,6 @@
     }
 
     .mainPromociones .precio {
-        position: absolute;
         background-color: azure;
         border-radius: 50%;
         font-size: 10px;
@@ -84,9 +86,11 @@
 
         .promo {
             background-color: $colorElemento;
-            border: 6px $colorElemento;
+            border: $estiloBordes;
+            display: grid;
+            grid-template-columns: 450px 200px;
+
             .precio {
-                position: absolute;
                 background-color: azure;
                 border-radius: 50%;
                 height: 80px;
