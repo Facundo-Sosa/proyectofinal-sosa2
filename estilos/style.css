@@ -442,7 +442,6 @@ header {
     font-size: 16px;
   }
   .mainPromociones .precio {
-    position: absolute;
     background-color: azure;
     border-radius: 50%;
     font-size: 10px;
