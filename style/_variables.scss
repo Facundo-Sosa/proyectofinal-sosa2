@@ -1,3 +1,7 @@
 $colorElemento: rgb(217, 4, 41);
 $colorLetra: rgb(141, 153, 174);
-$estiloBordes: 10px solid $colorElemento
+$estiloBordes: 10px solid $colorElemento;
+.estiloElemento{
+    background-color: $colorElemento;
+    $estiloBordes: 10px solid $colorElemento;
+}

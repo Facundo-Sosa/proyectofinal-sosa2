@@ -6,6 +6,10 @@
         justify-content: center;
         grid-row-gap: 50px;
 
+        h1 {
+            border-bottom: 5px outset;
+        }
+
         .sucursales {
             display: grid;
             justify-content: center;
@@ -16,8 +20,7 @@
                 display: grid;
                 grid-row-gap: 5px;
                 justify-content: center;
-                background-color: $colorElemento;
-                border: $estiloBordes;
+                @extend .estiloElemento;
 
                 .linea {
                     justify-self: center;
@@ -43,8 +46,7 @@
             justify-content: center;
             grid-row-gap: 5px;
             padding-bottom: 30px;
-            background-color: $colorElemento;
-            border: $estiloBordes;
+            @extend .estiloElemento;
         }
     }    
 }
@@ -54,6 +56,10 @@
         display: grid;
         justify-content: center;
         grid-row-gap: 50px;
+
+        h1 {
+            border-bottom: 5px outset;
+        }
 
         .sucursales {
             display: grid;
@@ -65,8 +71,7 @@
                 display: grid;
                 grid-row-gap: 5px;
                 justify-content: center;
-                background-color: $colorElemento;
-                border: $estiloBordes;
+                @extend .estiloElemento;
         
                 .linea {
                     justify-self: center;
@@ -90,8 +95,7 @@
             justify-content: center;
             grid-row-gap: 5px;
             padding-bottom: 30px;
-            background-color: $colorElemento;
-            border: $estiloBordes;
+            @extend .estiloElemento;
         } 
     }
 }
@@ -102,6 +106,10 @@
         display: grid;
         justify-content: center;
         grid-row-gap: 70px;
+
+        h1 {
+            border-bottom: 5px outset;
+        }
 
         h2 {
             font-size: 40px;
@@ -116,8 +124,7 @@
                 display: grid;
                 grid-row-gap: 5px;
                 justify-items: center;
-                background-color: $colorElemento;
-                border: $estiloBordes;
+                @extend .estiloElemento;
         
                 .linea {
                     justify-self: center;
@@ -141,15 +148,7 @@
             justify-content: center;
             grid-row-gap: 5px;
             padding-bottom: 30px;
-            background-color: $colorElemento;
-            border: $estiloBordes;
+            @extend .estiloElemento;
         }
     }
-
-    
-
-   
-
-    
-    
 }

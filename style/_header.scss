@@ -3,7 +3,6 @@ $colorLetra: rgb(141, 153, 174);
 header {
     background-color: rgb(237, 242, 244);
     border-bottom: 5px outset ;
-    margin-bottom: 50px;
 }
 
 @media (max-width:767px) { /*TAMAÑO SMARTPHONE*/
@@ -82,7 +81,7 @@ header {
 
 @media (min-width:768px) { /*TAMAÑO TABLET*/
     header{
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -137,7 +136,6 @@ header {
 
 @media (min-width:1024px) { /*TAMAÑO DESKTOP*/
     header{
-        margin-bottom: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

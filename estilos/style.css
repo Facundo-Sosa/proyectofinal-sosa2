@@ -21,11 +21,17 @@ body {
   width: 400px;
 }
 
+main h1 {
+  justify-self: center;
+  border-bottom: 5px solid brown;
+  font-size: 50px;
+  display: inline-block;
+}
+
 /*----------HEADER-----------------------------*/
 header {
   background-color: #edf2f4;
   border-bottom: 5px outset;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -107,7 +113,7 @@ header {
 @media (min-width: 768px) {
   /*TAMAÑO TABLET*/
   header {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -165,7 +171,6 @@ header {
 @media (min-width: 1024px) {
   /*TAMAÑO DESKTOP*/
   header {
-    margin-bottom: 80px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -239,6 +244,10 @@ header {
 }
 
 /*----------SUCURSALES-----------------------------*/
+.estiloElemento {
+  background-color: #d90429;
+}
+
 @media (max-width: 767px) {
   /*TAMAÑO SMARTPHONE*/
   .mainSucursales {
@@ -414,6 +423,10 @@ header {
 }
 
 /*----------PROMOCIONES-----------------------------*/
+.estiloElemento {
+  background-color: #d90429;
+}
+
 @media (max-width: 767px) {
   /*TAMAÑO SMARTPHONE*/
   .mainPromociones {
@@ -423,6 +436,7 @@ header {
     margin-left: 12px;
     margin-right: 12px;
     margin-top: 20px;
+    overflow: hidden;
   }
   .promo {
     display: -ms-grid;
@@ -433,7 +447,7 @@ header {
     border: 10px solid #d90429;
   }
   .promo .linea {
-    width: 300px;
+    width: 270px;
   }
   .promo h2 {
     font-family: 'Anton', sans-serif;
@@ -529,6 +543,10 @@ header {
 }
 
 /*----------PIZZAS-----------------------------*/
+.estiloElemento {
+  background-color: #d90429;
+}
+
 @media (max-width: 767px) {
   /*TAMAÑO SMARTPHONE*/
   .mainPizzas {
@@ -542,6 +560,7 @@ header {
     margin-top: 20px;
     grid-row-gap: 50px;
   }
+
   .mainPizzas .linea {
     width: 350px;
   }
@@ -668,6 +687,10 @@ header {
 }
 
 /*----------EMPANADAS-----------------------------*/
+.estiloElemento {
+  background-color: #d90429;
+}
+
 @media (max-width: 767px) {
   /*TAMAÑO SMARTPHONE*/
   .mainEmpanadas {

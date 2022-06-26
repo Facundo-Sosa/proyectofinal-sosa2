@@ -18,8 +18,7 @@
             grid-template-rows: 350px 80px 30px;
             grid-row-gap: 10px;
             justify-self: center;
-            background-color: $colorElemento;
-            border: $estiloBordes;
+            @extend .estiloElemento;
     
             .fotoEmpanada {
                 height: 350px;
@@ -52,8 +51,7 @@
             grid-gap: 10px;
             grid-template-rows: 180px;
             justify-self: center;
-            background-color: $colorElemento;
-            border: $estiloBordes;
+            @extend .estiloElemento;
     
             .fotoEmpanada {
                 height: 180px;
@@ -89,8 +87,7 @@
             grid-gap: 10px;
             grid-template-rows: 200px;
             justify-self: center;
-            background-color: rgb(217, 4, 41);
-            border: 10px solid $colorElemento;
+            @extend .estiloElemento;
     
             .fotoEmpanada {
                 height: 200px;
