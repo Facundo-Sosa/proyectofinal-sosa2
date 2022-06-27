@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icono.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css">
     <meta name="description" content="Proba la mejor pizza de Buenos Aires junto con las mejores empanadas">
     <meta name="keywords"  content="pizzas, pizzeria, empanadas, sucursales, buenos aires, corrientes, promociones, boedo, almagro, monserrat">
@@ -42,7 +43,7 @@
     <main class="mainSucursales">
         <h1>SUCURSALES</h1>
         <div class="sucursales">
-            <div class="sucursal">
+            <div class="sucursal" data-aos="fade-down">
                 <h2>Sucursal Boedo</h2>
                 <div class="linea"></div>
                 <div class="mapaImagen">
@@ -53,7 +54,7 @@
                 <h4>Direccion: Av. Boedo 48</h4>
                 <h4>Tel: 4958-1056</h4>
             </div>
-            <div class="sucursal">
+            <div class="sucursal" data-aos="fade-down">
                 <h2>Sucursal Sarmiento</h2>
                 <div class="linea"></div>
                 <div class="mapaImagen">
@@ -64,7 +65,7 @@
                 <h4>Direccion: Mario Bravo 402</h4>
                 <h4>Tel: 4862-0229</h4>
             </div>    
-            <div class="sucursal">
+            <div class="sucursal" data-aos="fade-down">
                 <h2>Sucursal San Juan</h2>
                 <div class="linea"></div>
                 <div class="mapaImagen">
@@ -76,7 +77,7 @@
                 <h4>Tel: 4304-5988</h4>
             </div>
         </div>
-        <form class="quejasSugerencias">
+        <form class="quejasSugerencias" data-aos="fade-down">
             <h3 style="font-size: 40px;">Quejas o sugerencias</h3>
             <label for="nombre"></label>
             <input type="text" placeholder="Nombre" name="nombre">
@@ -110,5 +111,7 @@
         </div>
         <h3>© 2022.Todos los derechos reservados.</h3>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
